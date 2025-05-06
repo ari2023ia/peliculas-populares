@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Películas populares de hoy</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Busca que hay de nuevo en hollywood</h1>
+            <input type="text" id="search-input" placeholder="Buscar películas...">
+            <button id="search-button">Buscar</button>
+        </header>
+        <nav class="bienvenida">
+            <h3>Millones de películas, seríes y actores.</h2>
+            <h3>Explora ya.</h3>
+            <p>esta pagina fue creada por Ariel Almada para prácticar la comunicación con servidores, la plataforma original es <a href="https://www.themoviedb.org/" target="_blank"> <p class="tmdb">The Movie Database </p></a></p>
+        </nav>
+        <main>
+            <section id="movie-list">
+                <h2>Películas Populares</h2>
+                <ul id="movies"></ul>
+                <div class="nav-container" id="nav">
+                </div>
+            </section>
+            <section id="movie-details" class="hidden">
+                <h2>Detalles de la Película</h2>
+                <div id="details"></div>
+                <button id="quitar-detalles" style="margin-bottom: 10px;">Ocultar Detalles</button>
+                <button id="add-to-favorites">Agregar a Favoritos</button>
+            </section>
+            <section id="favorites" class="hidden">
+                <h2>Películas Favoritas</h2>
+                <ul id="favorites-list"></ul>
+                <button id="borrar-lista">Borrar lista</button>
+                <button id="quitar-lista-fv" style="margin-top: 10px;">Ocultar lista</button>
+            </section>
+        </main>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
